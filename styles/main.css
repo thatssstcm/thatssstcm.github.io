@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+:root {
+    --index: calc(1vh + 1vw);
+    --breakpoint-small: 576px;
+    --breakpoint-medium: 768px;
+    --breakpoint-large: 992px;
+    --breakpoint-xlarge: 1200px;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 20vh;
+    flex-direction: column;
+}
+
+.title {
+    color: rgba(248, 252, 0, 0);
+    position: absolute;
+    font-family: jost-regular, sans-serif;
+    font-size: 96px;
+}
+.title{
+    color: yellow;
+    font-family: jost-regular, sans-serif;
+    font-size: 96px;
+    -webkit-text-stroke: 2px yellow;
+}
+
+.yaiki{
+    font-family: jost-regular, sans-serif;
+    font-size: 96px;
+    -webkit-text-stroke: 2px yellow;
+}
+.yaiki2 {
+    color: transparent;
+}
+
+.yaiki:nth-child(2) {
+    color: yellow;
+    animation: piss 4s ease-in-out infinite;
+}
+@keyframes piss {
+    0%,100% {
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    50%
+    {
+        clip-path: polygon(0% 60%,16% 65%,34% 66%,51% 62%,67% 50%,84% 45%,100% 46%,100% 100%, 0% 100%);
+    }
+}

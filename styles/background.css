@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to right top, #0d0c02, #050233);
+    background-size: 200% 200%;
+    animation: gradientAnimation 25s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
